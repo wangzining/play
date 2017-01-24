@@ -1,11 +1,17 @@
-package hello_world;
 import java.util.*;
 
-//help yangwenjing do cs323 stock problem:
-public class hello {
-	static int []A = {16,15,13,16,18,19,2};
+
+
+//compare stock price problem:
+
+
+
+public class stock_price {
+	static int []A = {16,15,13,16,18,19,2}; //test case: each number denotes the price bought in/out
 	static int max2 = 0;
 	
+	
+	//none recusive method
 	static int stock(int n){
 		int max = 0;
 		for(int i=0;i<n;i++){
@@ -20,7 +26,7 @@ public class hello {
 	
 	
 	
-	
+	//recusive method
 	static int recur_stock(int day){
 		day = day-1;
 		
@@ -44,7 +50,7 @@ public class hello {
 	
 	public static void main(String []args){
 		
-	System.out.println("Hello!\n");
+
 	
 	int count = stock(A.length);
 	
